@@ -10,17 +10,16 @@ This extractor uses an LLM model (LLaMA) that runs on Ollama and LangChain to re
    ```bash
    ollama pull llama3.1:8b
 
-
-
 ## How to Run the Project 
 1. Install the required dependencies
    ```bash
    pip install -r requirements.txt
-2. Add datasets in datasets/docs
-3. Run the main script
+2. Create a docs folder inside the datasets directory
+4. Add the AD documents (dataset) to: datasets/docs
+5. Run the main script
    ```bash
    python main.py
-4. To test given AD's run 
+6. To test given AD's run 
    ```bash
    python test.py
 
