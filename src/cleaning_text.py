@@ -31,9 +31,7 @@ def tag(line):
     matched_keywords = {}
     tags = {
         "ad_number": [
-    # FAA format: YYYY-MM-DD (2 digit bulan, 2 digit nomor)
     (re.compile(r"\bFAA\s+AD\s+(?:No\.?\s*:?\s*)?\d{4}-\d{2}-\d{2}\b", re.IGNORECASE), 6),
-    # EASA format: YYYY-NNNN[R#] (4 digit nomor + optional revision)
     (re.compile(r"\bEASA\s+AD\s+(?:No\.?\s*:?\s*)?\d{4}[\s\-–—]\d{3,4}(?:R\d+)?\b", re.IGNORECASE), 6),
     ("effective date", 6),(re.compile(r"\bissue(?:d)?\b", re.IGNORECASE), 3)],
         
