@@ -1,4 +1,4 @@
-# AD (Airworthiness Directives) Extractor
+# AD (Airworthiness Directives) Extractor 🛫✈️
 An AI-powered extractor for Airworthiness Directives (AD) documents issued by aviation authorities (FAA, EASA). The system uses an LLM (LLaMA) running on Ollama with LangChain to read and chunk documents, extracting key information such as AD number, date, affected aircraft models, modifications constraints, and the reason for the AD. The output is structured JSON, enabling easy integration with aviation databases or automated analysis pipelines.
 
 ## Prerequisites  ⚙️
